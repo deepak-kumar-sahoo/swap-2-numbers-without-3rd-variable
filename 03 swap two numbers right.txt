@@ -1,0 +1,32 @@
+﻿/**
+ * This program is used to swap two numbers without using third variable.
+ * @author W3spoint
+ */
+public class SwapNumbers {
+      /**
+       * This method is used to swap no.s without using third variable.
+       * @param num1
+       * @param num2
+       */
+      static void swapNumbers(int num1, int num2){
+            num1 = num1 + num2;
+            num2 = num1 - num2;
+            num1 = num1 - num2;
+ 
+            System.out.println("After swapping: "+ num1 + " and " + num2);
+      }     
+ 
+      public static void main(String args[]){
+            int num1 = 20;
+            int num2 = 30;
+           System.out.println("Before swapping:"+ num1 + " and " + num2);
+            //method call
+            swapNumbers(num1, num2);
+      }
+ 
+}
+
+Output:-
+=========
+Before swapping no.s are : 20 and 30
+After swapping no.s are : 30 and 20
